@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "\a" << endl;
+
+    cout << "Dear Sir\\Madam,\nHow are you?\nMy name is \"Mohammed\" , nice to meet you.\n"<<endl;
+
+    cout << "Ali\t\tAhmed\t\tLina\n";
+	cout << "Fadi\t\tZain\t\tMona\n";
+
+
+
+    return 0;
+}
