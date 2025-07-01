@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"********************\n";
+    cout<<"Name: Omar Al-Qudah.\n";
+    cout<<"Age: 22 years old.\n";
+    cout<<"City: Ajloun.\n";
+    cout<<"Country: Jordan.\n";
+    cout<<"********************\n\n";
+    
+    cout<<"********\n";
+    cout<<"********\n";
+    cout<<"********\n";
+    cout<<"********\n\n";
+    
+    cout<<"I Love Programming.\n\n";
+    cout<<"I promise to be the best developer.\n\n";
+    cout<<"I know it will take some timeto practice, but I\nachieve my goal.\n\n";
+    cout<<"Best regards,\nMohammed Abu-Hadhoud.\n\n";
+    
+    cout<<"*    *\n";
+    cout<<"*    *\n";
+    cout<<"******\n";
+    cout<<"*    *\n";
+    cout<<"*    *\n";
+    
+
+    return 0;
+}
