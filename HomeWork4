@@ -1,0 +1,71 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	string name;
+	cout << "Enter your name: ";
+	cin >> name;
+	cout << endl;
+	int age;
+	cout << "Enter your age: ";
+	cin >> age;
+	cout << endl;
+	string country;
+	cout << "Enter your country: ";
+	cin >> country;
+	cout << endl;
+	string city;
+	cout << "Enter your city: ";
+	cin >> city;
+	cout << endl;
+	int Monthly_Salary;
+	cout << "Enter your monthly salary: ";
+	cin >> Monthly_Salary;
+	cout << endl;
+	int Yearly_Salary = Monthly_Salary * 12;
+	char Gender;
+	cout << "Enter your Gender (M/F): ";
+	cin >> Gender;
+	cout << endl;
+	bool Married;
+	cout << "Are you married? (1 for Yes, 0 for No): ";
+	cin >> Married;
+	cout << endl<<endl;
+
+    cout << "************************" << endl;
+	cout << "Name: " << name << endl;
+	cout << "Age: " << age << endl;
+	cout << "City: " << city << endl;
+	cout << "Country: " << country << endl;
+	cout << "Monthly Salary: " << Monthly_Salary << "$" << endl;
+	cout << "Yearly Salary: " << Yearly_Salary << "$" << endl;
+	cout << "Gender: " << Gender << endl;
+	cout << "Married: " << (Married ? "Yes" : "No") << endl;
+    cout << "************************\n" << endl;
+
+	int a, b, c;
+	cout << "Enter first number: ";
+	cin >> a;
+	cout << "Enter second number: ";
+	cin >> b;
+	cout << "Enter third number: ";
+	cin >> c;
+	cout << endl;
+	int Total = a + b + c;
+	cout <<a<< " +\n"<<b<<" +\n"<<c<<"\n" << endl;
+	cout << "-------------------------\n" << endl;
+	cout << "Total = " << Total << endl << endl;
+
+	int Age;
+	cout << "Enter your age: ";
+	cin >> Age;
+	cout << endl;
+	cout << "After 5 years, you will be " << Age + 5 << " years old." << endl;
+
+
+
+
+    return 0;
+}
