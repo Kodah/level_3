@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+int main()
+{
+	
+	int x[3];
+	cout << "Enter the first grade: ";
+	cin >> x[0];
+	cout << endl;
+	cout << "Enter the second grade: ";
+	cin >> x[1];
+	cout << endl;
+	cout << "Enter the third grade: ";
+	cin >> x[2];
+	cout << endl;
+
+	cout << "The average of the three grades is: " << float (x[0] + x[1] + x[2]) / 3.0 << endl;
+
+    return 0;
+}
