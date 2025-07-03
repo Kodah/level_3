@@ -1,0 +1,100 @@
+#include <iostream>
+
+using namespace std;
+
+struct Address
+{
+	string country;
+	string city;
+	string email;
+};
+
+struct Car
+	{
+	string brand;
+	string model;
+	int year;
+	float price;
+	Address address;
+};
+
+struct information
+{
+	string Fname;
+	string Lname;
+	int age;
+	int Monthly_Salary;
+	char Gender;
+	bool isMarried;
+	Car car;
+};
+
+
+int main()
+{
+	information person,mycar,ad;
+	person.Fname;
+	person.Lname;
+	person.age;
+	person.Monthly_Salary;
+	person.Gender;
+	person.isMarried;
+
+	mycar.car.brand;
+	mycar.car.model;
+	mycar.car.year;
+	mycar.car.price;
+
+	ad.car.address.country;
+	ad.car.address.city;
+	ad.car.address.email;
+
+	cout << "Enter your First name: ";
+	cin >> person.Fname;
+	cout << "Enter your last name: ";
+	cin >> person.Lname;
+	cout << "Enter your age: ";
+	cin >> person.age;
+	cout << "Enter your monthly salary: ";
+	cin >> person.Monthly_Salary;
+	cout << "Enter your Gender (M/F): ";
+	cin >> person.Gender;
+	cout << "Are you married? (1 for Yes, 0 for No): ";
+	cin >> person.isMarried;
+	cout << "Enter your car brand: ";
+	cin >> mycar.car.brand;
+	cout << "Enter your car model: ";
+	cin >> mycar.car.model;
+	cout << "Enter your car year: ";
+	cin >> mycar.car.year;
+	cout << "Enter your car price: ";
+	cin >> mycar.car.price;
+	cout << "Enter your country: ";
+	cin >> ad.car.address.country;
+	cout << "Enter your city: ";
+	cin >> ad.car.address.city;
+	cout << "Enter your email: ";
+	cin >> ad.car.address.email;
+
+	cout << "*******************************************\n";
+	cout << "\nInformation Summary:\n";
+	cout << "First Name: " << person.Fname << endl;
+	cout << "Last Name: " << person.Lname << endl;
+	cout << "Age: " << person.age << endl;
+	cout << "Monthly Salary: " << person.Monthly_Salary << endl;
+	cout << "Yearly Salary: " << person.Monthly_Salary * 12<< endl;
+	cout << "Gender: "<< person.Gender << endl;
+	cout << "Married: " << (person.isMarried ? "Yes" : "No") << endl;
+	cout << "\nCar Information:\n";
+	cout << "Brand: " << mycar.car.brand << endl;
+	cout << "Model: " << mycar.car.model << endl;
+	cout << "Year: " << mycar.car.year << endl;
+	cout << "Price: " << mycar.car.price << "$" << endl;
+	cout << "\nAddress Information:\n";
+	cout << "Country: " << ad.car.address.country << endl;
+	cout << "City: " << ad.car.address.city << endl;
+	cout << "Email: " << ad.car.address.email << endl;
+	cout << "*******************************************\n";
+
+    return 0;
+}
