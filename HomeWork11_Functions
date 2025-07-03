@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+
+void information()
+{
+	cout << "***************************************\n" << endl;
+	cout << "Name: Omar Ali Al-Qudah." << endl;
+	cout << "Age: 22 years old." << endl;
+	cout << "University: Al-Balqa Applied University." << endl;
+	cout << "Major: Computer Science." << endl;
+	cout << "isMarried: No." << endl;
+	cout << "Gender: Male.\n" << endl;
+	cout << "***************************************\n" << endl;
+}
+
+void stars()
+{
+	cout << "*************" << endl;
+	cout << "*************" << endl;
+	cout << "*************" << endl;
+	cout << "*************\n" << endl;
+	cout << "***************************************\n" << endl;
+}
+
+void Message()
+{
+	cout << "I love programming!" << endl;
+	cout << "I promise i will give my best to leran C++ & to be best developer!" << endl;
+	cout << "I know i will take some time to practice, but I\nwill achieve my goal." << endl;
+	cout << "Best regards,\nOmar Al-Qudah.\n" << endl;
+	cout << "***************************************\n" << endl;
+}
+
+void H()
+{
+	cout << "H   H  EEEEE  L      L       OOO" << endl;
+	cout << "H   H  E      L      L      O   O" << endl;
+	cout << "HHHHH  EEEE   L      L      O   O" << endl;
+	cout << "H   H  E      L      L      O   O" << endl;
+	cout << "H   H  EEEEE  LLLLL  LLLLL   OOO\n" << endl;
+	cout << "***************************************\n" << endl;
+}
+void H_()
+{
+	cout << "*    *" << endl;
+	cout << "*    *" << endl;
+	cout << "******" << endl;
+	cout << "*    *" << endl;
+	cout << "*    *\n" << endl;
+	cout << "***************************************\n" << endl;
+}
+int main()
+{
+	information();
+	stars();
+	Message();
+	H();
+	H_();
+
+    return 0;
+}
