@@ -1,0 +1,76 @@
+#include <iostream>
+
+using namespace std;
+
+enum eCountry
+{
+	JORDAN = 1,
+	IRAQ=2,
+	SYRIA=3,
+	LEBANON=4,
+	EGYPT=5,
+	SAUDI_ARABIA=6,
+	UNITED_ARAB_EMIRATES=7,
+	OMAN=8
+};
+
+int main()
+{
+	cout << "************************************\n";
+	cout << "Welcome to the Country Selection Program\n";
+	cout << "Choose a country by entering the corresponding number:\n";
+	cout << "1. Jordan\n";
+	cout << "2. Iraq\n";
+	cout << "3. Syria\n";
+	cout << "4. Lebanon\n";
+	cout << "5. Egypt\n";
+	cout << "6. Saudi Arabia\n";
+	cout << "7. United Arab Emirates\n";
+	cout << "8. Oman\n";
+	cout << "************************************\n";
+	
+	int c;
+	eCountry Color;
+
+	cin >> c;
+	Color = (eCountry)c;
+
+	if (Color == eCountry::JORDAN)
+	{
+		cout << "You selected Jordan.\n";
+	}
+	else if (Color == eCountry::IRAQ)
+	{
+		cout << "You selected Iraq.\n";
+	}
+	else if (Color == eCountry::SYRIA)
+	{
+		cout << "You selected Syria.\n";
+	}
+	else if (Color == eCountry::LEBANON)
+	{
+		cout << "You selected Lebanon.\n";
+	}
+	else if (Color == eCountry::EGYPT)
+	{
+		cout << "You selected Egypt.\n";
+	}
+	else if (Color == eCountry::SAUDI_ARABIA)
+	{
+		cout << "You selected Saudi Arabia.\n";
+	}
+	else if (Color == eCountry::UNITED_ARAB_EMIRATES)
+	{
+		cout << "You selected United Arab Emirates.\n";
+	}
+	else if (Color == eCountry::OMAN)
+	{
+		cout << "You selected Oman.\n";
+	}
+	else
+	{
+		cout << "Invalid selection. Please run the program again and select a valid country.\n";
+	}
+
+    return 0;
+}
