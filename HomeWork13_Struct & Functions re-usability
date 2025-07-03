@@ -1,0 +1,71 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct information
+{
+	string name;
+	int age;
+	string country;
+	string city;
+	int Monthly_Salary;
+	char Gender;
+	bool Married;
+
+};
+
+void ReadInfo(information &info)
+{
+	cout << "Enter your name: ";
+	cin >> info.name;
+	cout << endl;
+	cout << "Enter your age: ";
+	cin >> info.age;
+	cout << endl;
+	cout << "Enter your country: ";
+	cin >> info.country;
+	cout << endl;
+	cout << "Enter your city: ";
+	cin >> info.city;
+	cout << endl;
+	cout << "Enter your monthly salary: ";
+	cin >> info.Monthly_Salary;
+	cout << endl;
+	cout << "Enter your Gender (M/F): ";
+	cin >> info.Gender;
+	cout << endl;
+	cout << "Are you married? (1 for Yes, 0 for No): ";
+	cin >> info.Married;
+	cout << endl << endl;
+}
+
+void PrintInfo(const information& info)
+{
+	cout << "************************" << endl;
+	cout << "Name: " << info.name << endl;
+	cout << "Age: " << info.age << endl;
+	cout << "City: " << info.city << endl;
+	cout << "Country: " << info.country << endl;
+	cout << "Monthly Salary: " << info.Monthly_Salary << "$" << endl;
+	cout << "Yearly Salary: " << info.Monthly_Salary * 12 << "$" << endl;
+	cout << "Gender: " << info.age << endl;
+	cout << "Married: " << (info.Married ? "Yes" : "No") << endl;
+	cout << "***********************\n" << endl;
+}
+
+int main()
+{
+	information info1,info2,info3;
+	ReadInfo(info1);
+	PrintInfo(info1);
+
+	ReadInfo(info2);
+	PrintInfo(info2);
+
+	ReadInfo(info3);
+	PrintInfo(info3);
+
+
+    return 0;
+}
