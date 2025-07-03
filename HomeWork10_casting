@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string str1 = "43.22";
+
+	int num1 = stoi(str1); // Convert string to int
+
+	double num2 = stod(str1); // Convert string to double
+
+	float num3 = stof(str1); // Convert string to float
+
+	cout << "String: " << str1 << endl;
+
+	cout << "Convert string to int: " << num1 << endl;
+
+	cout << "Convert string to double: " << num2 << endl;
+
+	cout << "Convert string to float: " << num3 <<endl<< endl;
+	cout << "******************************\n" << endl;
+
+	int n1 = 20 ;
+
+	string str2 = to_string(n1); // Convert int to string
+
+	cout << "Convert int to string: " << str2 << endl << endl;
+
+	cout << "******************************\n" << endl;
+
+	double n2 = 33.5;
+
+	string str3 = to_string(n2); // Convert double to string
+
+	cout << "Convert double to string: " << str3 << endl << endl;
+
+	cout << "******************************\n" << endl;
+
+	float n3 = 55.23;
+
+	string str4 = to_string(n3); // Convert float to string
+
+	cout << "Convert float to string: " << str4 << endl;
+
+	int num4 = n3; // Convert float to int (implicit conversion)
+
+	cout << "Convert float to int (implicit conversion): " << num4 << endl;
+
+	num4 = int(n3); // Convert float to int (explicit conversion)
+
+	cout << "Convert float to int (explicit conversion): " << num4 << endl;
+
+	num4 = (int)n3; // Convert float to int (C-style cast)
+
+	cout << "Convert float to int (C-style cast): " << num4 <<endl<< endl;
+
+	cout << "******************************\n" << endl;
+
+    return 0;
+}
