@@ -1,0 +1,64 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Student
+{
+	string Fname;
+	string Lname;
+	int age;
+	string phone;
+};
+
+void Readinfo(Student& info)
+{
+	cout << "Enter the first name: ";
+	cin >> info.Fname;
+	cout << endl;
+	cout << "Enter the Last name: ";
+	cin >> info.Lname;
+	cout << endl;
+	cout << "Enter the age: ";
+	cin >> info.age;
+	cout << endl;
+	cout << "Enter the Phone: ";
+	cin >> info.phone;
+	cout << endl;
+}
+
+void Printinfo(Student& info)
+{
+	cout << "*****************************\n" << endl;
+	cout << "First Name: " << info.Fname << endl;
+	cout << "Last Name: " << info.Lname << endl;
+	cout << "Age: " << info.age << endl;
+	cout << "Phone: " << info.phone << endl;
+	cout << "\n*****************************\n" << endl;
+}
+
+void ReadGrades(Student x[2])
+{
+	Readinfo(x[0]);
+	Readinfo(x[1]);
+}
+
+void PrintAverage(Student x[2])
+{
+	Printinfo(x[0]);
+	Printinfo(x[1]);
+	
+}
+
+int main()
+{
+	
+	Student info;
+	Readinfo(info);
+	Printinfo(info);
+
+	Readinfo(info);
+	Printinfo(info);
+
+    return 0;
+}
