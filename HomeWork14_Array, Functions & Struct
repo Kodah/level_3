@@ -37,13 +37,14 @@ void Printinfo(Student& info)
 	cout << "\n*****************************\n" << endl;
 }
 
-void ReadGrades(Student x[2])
+void Readin(Student x[2])
 {
 	Readinfo(x[0]);
+	cout << "-----------------------------\n" << endl;
 	Readinfo(x[1]);
 }
 
-void PrintAverage(Student x[2])
+void Printin(Student x[2])
 {
 	Printinfo(x[0]);
 	Printinfo(x[1]);
@@ -53,12 +54,9 @@ void PrintAverage(Student x[2])
 int main()
 {
 	
-	Student info;
-	Readinfo(info);
-	Printinfo(info);
-
-	Readinfo(info);
-	Printinfo(info);
+	Student g[2];
+	Readin(g);
+	Printin(g);
 
     return 0;
 }
