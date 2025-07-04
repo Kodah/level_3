@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -62,6 +61,18 @@ void forStars(int i, int j)
 	}
 }
 
+void for1to10_dec(int i, int j)
+{
+	for (i = 1; i <= 10; i++)
+	{
+		for (j = i; j <= 10; j++)
+		{
+			cout << j << " ";
+		}
+		cout << endl;
+	}
+}
+
 int main()
 {
 	int i=0, j=0;
@@ -83,6 +94,10 @@ int main()
 	forStars(i, j);
 	cout << endl;
 	cout << "End of program." << endl;
+	cout << "1 to 10 with decreasing numbers:" << endl;
+	for1to10_dec(i, j);
+	cout << endl;
+
 
 	return 0;
 }
