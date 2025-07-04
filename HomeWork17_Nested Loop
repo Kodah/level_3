@@ -1,0 +1,88 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void forAtoZ(char i, char j)
+{
+	for ( i = 65; i <= 90; i++)
+	{
+		for ( j = 65; j <= 90; j++)
+		{
+			cout << i << j << endl;
+		}
+	}
+}
+
+void for1to10(int i, int j)
+{
+	for (i = 1; i <= 10; i++)
+	{
+		for (j = 1; j <= i; j++)
+		{
+			cout << j << " ";
+		}
+		cout << endl;
+	}
+}
+
+void for10to1(int i, int j)
+{
+	for (i = 10; i >= 1; i--)
+	{
+		for (j = 1; j <= i; j++)
+		{
+			cout << j << " ";
+		}
+		cout << endl;
+	}
+}
+
+void AtoF(char i, char j)
+{
+	for (i = 65; i <= 70; i++)
+	{
+		for (j = 65; j <= i; j++)
+		{
+			cout << j << " ";
+		}
+		cout << endl;
+	}
+}
+
+void forStars(int i, int j)
+{
+	for (i = 10; i >= 1; i--)
+	{
+		for (j = 1; j <= i; j++)
+		{
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+
+int main()
+{
+	int i=0, j=0;
+	char a=0, b=0;
+
+	cout << "A to Z combinations:" << endl;
+	forAtoZ(a, b);
+	cout << endl;
+	cout << "1 to 10 pattern:" << endl;
+	for1to10(i, j);
+	cout << endl;
+	cout << "10 to 1 pattern:" << endl;
+	for10to1(i, j);
+	cout << endl;
+	cout << "A to F combinations:" << endl;
+	AtoF(a, b);
+	cout << endl;
+	cout << "Stars pattern:" << endl;
+	forStars(i, j);
+	cout << endl;
+	cout << "End of program." << endl;
+
+	return 0;
+}
