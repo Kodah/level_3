@@ -1,0 +1,74 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+struct Student
+{
+	string Fname;
+	string Lname;
+	int age;
+	string phone;
+};
+
+void Readinfo(Student& info)
+{
+	cout << "Enter the first name: ";
+	cin >> info.Fname;
+	cout << endl;
+	cout << "Enter the Last name: ";
+	cin >> info.Lname;
+	cout << endl;
+	cout << "Enter the age: ";
+	cin >> info.age;
+	cout << endl;
+	cout << "Enter the Phone: ";
+	cin >> info.phone;
+	cout << endl;
+}
+
+void Printinfo(Student& info)
+{
+	cout << "\n*****************************\n" << endl;
+	cout << "First Name: " << info.Fname << endl;
+	cout << "Last Name: " << info.Lname << endl;
+	cout << "Age: " << info.age << endl;
+	cout << "Phone: " << info.phone << endl;
+	cout << "\n*****************************\n" << endl;
+}
+
+void Readin(Student x[100], int &Length)
+{
+	cout << "Enter the number of students (1-100):\n ";
+	cin >> Length;
+	while (Length < 1 || Length > 100) {
+		cout << "Invalid number. Please enter a number between 1 and 100: ";
+		cin >> Length;
+	}
+	for(int i = 0; i < Length ; i++)
+	{
+		cout << "Enter information for student " << (i + 1) << ":\n " << endl;
+		Readinfo(x[i]);
+	}
+}
+
+void Printin(Student x[100], int Length)
+{
+	for(int i = 0; i < Length ; i++)
+	{
+		cout << "Information for student " << (i + 1) << ": " << endl;
+		Printinfo(x[i]);
+	}
+	cout << "All information printed successfully!" << endl;
+}
+
+int main()
+{
+
+	Student g[100]; 
+	int length=0;
+	Readin(g,length);
+	Printin(g,length);
+
+	return 0;
+}
