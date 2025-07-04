@@ -1,0 +1,184 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+enum DayOfWeek {
+	Sunday = 1,
+	Monday = 2,
+	Tuesday = 3,
+	Wednesday = 4,
+	Thursday = 5,
+	Friday = 6,
+	Saturday = 7
+};
+
+enum MonthOfYear {
+	January = 1,
+	February = 2,
+	March = 3,
+	April = 4,
+	May = 5,
+	June = 6,
+	July = 7,
+	August = 8,
+	September = 9,
+	October = 10,
+	November = 11,
+	December = 12
+};
+
+enum OperationType {
+	Addition = '+',
+	Subtraction = '-',
+	Multiplication = '*',
+	Division = '/'
+};
+
+void ShowCalcMenu(int &a, int &b)
+{
+	cout << "*****************************" << endl;
+	cout << "Welcome to the Calculator!" << endl;
+	cout << "*****************************" << endl;
+	cout << "Please enter First number" << endl;
+	cin >> a;
+	cout << endl;
+	cout << "Please enter Second number" << endl;
+	cin >> b;
+	cout << endl;
+	cout << "Please choose an operation:" << endl;
+	cout << "1. Addition (+)" << endl;
+	cout << "2. Subtraction (-)" << endl;
+	cout << "3. Multiplication (*)" << endl;
+	cout << "4. Division (/)" << endl;
+	cout << "5. Exit" << endl;
+	cout << "*****************************" << endl;
+
+}
+
+void ShowDayMenu()
+{
+	cout << "******************************" << endl;
+	cout << "Welcome to the Day of Week Finder!" << endl;
+	cout << "******************************" << endl;
+	cout << "Please enter a number (1-7) to find the corresponding day of the week:" << endl;
+	cout << "1. Sunday" << endl;
+	cout << "2. Monday" << endl;
+	cout << "3. Tuesday" << endl;
+	cout << "4. Wednesday" << endl;
+	cout << "5. Thursday" << endl;
+	cout << "6. Friday" << endl;
+	cout << "7. Saturday" << endl;
+	cout << "Other. Invalid Day." << endl;
+	cout << "******************************\n" << endl;
+}
+
+void ShowMonthMenu()
+{
+	cout << "******************************" << endl;
+	cout << "Welcome to the Month Finder!" << endl;
+	cout << "******************************" << endl;
+	cout << "Please enter a number (1-12) to find the corresponding month:" << endl;
+	cout << "1. January" << endl;
+	cout << "2. February" << endl;
+	cout << "3. March" << endl;
+	cout << "4. April" << endl;
+	cout << "5. May" << endl;
+	cout << "6. June" << endl;
+	cout << "7. July" << endl;
+	cout << "8. August" << endl;
+	cout << "9. September" << endl;
+	cout << "10. October" << endl;
+	cout << "11. November" << endl;
+	cout << "12. December" << endl;
+	cout << "Other. Invalid Month." << endl;
+	cout << "******************************\n" << endl;
+}
+
+DayOfWeek showDayMenu()
+{
+	DayOfWeek day;
+
+	int d;
+	cin >> d;
+	return (DayOfWeek)d;
+}
+
+MonthOfYear showMonthMenu()
+{
+	MonthOfYear month;
+	int m;
+	cin >> m;
+	return (MonthOfYear)m;
+}
+
+OperationType showOperationMenu()
+{
+	OperationType op;
+	char o;
+	cin >> o;
+	return (OperationType)o;
+}
+
+string getDayName(DayOfWeek day)
+{
+	switch (day) {
+	case Sunday: return "Sunday";
+	case Monday: return "Monday";
+	case Tuesday: return "Tuesday";
+	case Wednesday: return "Wednesday";
+	case Thursday: return "Thursday";
+	case Friday: return "Friday";
+	case Saturday: return "Saturday";
+	default: return "Invalid day.";
+	}
+}
+
+string getMonthName(MonthOfYear month)
+{
+	switch (month) {
+	case January: return "January";
+	case February: return "February";
+	case March: return "March";
+	case April: return "April";
+	case May: return "May";
+	case June: return "June";
+	case July: return "July";
+	case August: return "August";
+	case September: return "September";
+	case October: return "October";
+	case November: return "November";
+	case December: return "December";
+	default: return "Invalid month.";
+	}
+}
+
+int getOperationName(OperationType op, int &a, int &b)
+{
+
+	switch (op) {
+	case Addition: return a+b;
+	case Subtraction: return a-b;
+	case Multiplication: return a*b;
+	case Division: return a/b;
+	default: return false;
+	}
+}
+
+int main()
+{
+	int a, b;
+	ShowCalcMenu(a,b);
+
+	cout << "Your Calculation Result is: " << getOperationName(showOperationMenu(),a,b);
+	cout <<endl<< endl;
+
+	ShowDayMenu();
+
+	cout << "The Day of the Week is: " << getDayName(showDayMenu()) <<endl<< endl;
+
+	ShowMonthMenu();
+	cout << "The Month is: " << getMonthName(showMonthMenu()) <<endl<< endl;
+
+    return 0;
+}
